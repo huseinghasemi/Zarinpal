@@ -11,7 +11,7 @@ Use composer to install this package
 برای نصب و استفاده از این پکیج می توانید از کمپوسر استفاده کنید
 
 ```bash
-composer require pishran/zarinpal
+composer require huseinghasemi/zarinpal
 ```
 
 ## تنظیمات - Configuration
