@@ -44,6 +44,15 @@ To change currency to Rial
 ZARINPAL_CURRENCY=IRR
 ```
 
+To change payment type to test gateway
+
+برای تغییر وضعیت درگاه به تست
+(به طور پیشفرض false هست. که اگر نیاز به درگاه تست هست کد پایین رو به dotenv اضافه کنید)
+
+```dotenv
+ZARINPAL_SANDBOX=TRUE
+```
+
 ## روش استفاده | How to use
 
 ### ارسال مشتری به درگاه پرداخت | Send customer to payment gateway
@@ -52,7 +61,7 @@ ZARINPAL_CURRENCY=IRR
 $response = zarinpal()
     ->merchantId('00000000-0000-0000-0000-000000000000') // تعیین مرچنت کد در حین اجرا - اختیاری
     ->amount(100) // مبلغ تراکنش
-    ->request()
+    ->request() 
     ->description('transaction info') // توضیحات تراکنش
     ->callbackUrl('https://domain.com/verification') // آدرس برگشت پس از پرداخت
     ->mobile('09123456789') // شماره موبایل مشتری - اختیاری

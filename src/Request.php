@@ -24,15 +24,18 @@ class Request
     /** @var string */
     private $email;
 
+    private $url;
+
     public function __construct(string $merchantId, int $amount)
     {
         $this->merchantId = $merchantId;
         $this->amount = $amount;
+        $this->url = config('zarinpal.sandbox') ? 'https://sandbox.zarinpal.com/pg/rest/WebGate/PaymentRequest.json' : 'https://payment.zarinpal.com/pg/rest/WebGate/PaymentRequest.json';
     }
 
     public function send(): RequestResponse
     {
-        $url = 'https://api.zarinpal.com/pg/v4/payment/request.json';
+        $url = $this->url;
 
         $metadata = [];
         
