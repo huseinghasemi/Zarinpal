@@ -1,6 +1,6 @@
 <?php
 
-namespace Pishran\Zarinpal;
+namespace huseinghasemi\Zarinpal;
 
 use Illuminate\Http\RedirectResponse;
 
