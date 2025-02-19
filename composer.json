@@ -1,18 +1,16 @@
 {
-    "name": "pishran/zarinpal",
+    "name": "huseinghasemi/zarinpal",
     "description": "Zarinpal library for Laravel.",
     "keywords": [
         "laravel",
         "zarinpal",
         "payment"
     ],
-    "homepage": "https://github.com/pishran/zarinpal",
+    "homepage": "https://github.com/huseinghasemi/zarinpal",
     "license": "MIT",
     "authors": [
         {
-            "name": "Farid Aghili",
-            "email": "farid@pishranit.ir",
-            "homepage": "https://www.faridaghili.ir",
+            "name": "huseinghasemi",
             "role": "Developer"
         }
     ],
@@ -22,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Pishran\\Zarinpal\\": "src/"
+            "huseinghasemi\\Zarinpal\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -31,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Pishran\\Zarinpal\\ServiceProvider"
+                "huseinghasemi\\Zarinpal\\ServiceProvider"
             ]
         }
     }
